@@ -1,0 +1,132 @@
+/* Untuk Tablet */
+@media all and (max-width: 950px) 
+{
+  body
+  {
+    font-size: 14px;
+  }
+
+  .features {
+    width: 45%;
+  }
+
+  .reviews {
+    width: 25%;
+  }
+
+  .foot-landing {
+    min-height: 430px;
+  }
+
+}
+
+/* Untuk Smartphone */
+@media all and (max-width: 750px) 
+{
+  body
+  {
+    font-size: 12px;
+  }
+
+  .carousel-prop-left h1 {
+    width: 65%;
+    font-size: 2.5em;
+  }
+
+  .carousel-prop-right img {
+    width: 390px;
+    height: 240px;
+  }
+
+  .content-header:after {
+    width: 20%;
+  }
+
+  .features {
+    width: 65%;
+  }
+
+  .parent-reviews {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .reviews {
+    width: 30%;
+  }
+
+  .support {
+    width: 50%;
+  }
+
+  .foot-landing {
+    min-height: 350px;
+  }
+
+}
+
+@media all and (max-width: 700px) 
+{
+  body
+  {
+    font-size: 12px;
+  }
+
+  .carousel-prop-left h1 {
+    width: 35%;
+    font-size: 2em;
+    margin: 1em !important;
+  }
+
+  .carousel-prop-right img {
+    width: 350px;
+    height: 200px;
+  }
+
+  .content-header:after {
+    width: 25%;
+  }
+
+  .features {
+    width: 70%;
+  }
+
+  .reviews {
+    width: 35%;
+  }
+
+  .foot-landing {
+    min-height: 350px;
+  }
+
+  .foot-landing2 {
+    flex-direction: column;
+  }
+
+  .foot-right {
+    text-align: left !important;
+  }
+
+  .foot-right a {
+    color: white;
+  }
+
+@media all and (max-width: 550px) 
+{
+  .content-header:after {
+    width: 35%;
+  }
+
+  .features {
+    width: 80%;
+  }
+
+  .reviews {
+    width: 45%;
+  }
+
+  .button-5
+  {
+    padding: 12px 12px;
+  }
+}
