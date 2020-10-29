@@ -1,21 +1,43 @@
 /* Untuk Tablet */
-@media all and (max-width: 950px) 
+@media all and (max-width: 990px) 
 {
   body
   {
     font-size: 14px;
   }
 
+  .login-left, .login-right {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .login-left img {
+    display: none;
+  }
+
   .features {
     width: 45%;
   }
 
-  .reviews {
-    width: 25%;
+  .reviews, .support {
+    flex: 0 0 40%;
+    max-width: 40%;
   }
 
   .foot-landing {
     min-height: 430px;
+  }
+
+  .carousel , .carousel-inner , .carousel-item {
+    height: 545px;
+  }
+
+  .foot-right {
+    text-align: left !important;
+  }
+
+  .foot-right a {
+    color: white;
   }
 
 }
@@ -23,44 +45,27 @@
 /* Untuk Smartphone */
 @media all and (max-width: 750px) 
 {
+
   body
   {
     font-size: 12px;
   }
 
-  .carousel-prop-left h1 {
-    width: 65%;
-    font-size: 2.5em;
+  .carousel-prop-right {
+    display: none;          
   }
 
-  .carousel-prop-right img {
-    width: 390px;
-    height: 240px;
+  .carousel , .carousel-inner , .carousel-item {
+    height: 525px;
+  }
+
+  .carousel-prop-left {
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 
   .content-header:after {
     width: 20%;
-  }
-
-  .features {
-    width: 65%;
-  }
-
-  .parent-reviews {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .reviews {
-    width: 30%;
-  }
-
-  .support {
-    width: 50%;
-  }
-
-  .foot-landing {
-    min-height: 350px;
   }
 
 }
@@ -72,27 +77,12 @@
     font-size: 12px;
   }
 
-  .carousel-prop-left h1 {
-    width: 35%;
-    font-size: 2em;
-    margin: 1em !important;
-  }
-
-  .carousel-prop-right img {
-    width: 350px;
-    height: 200px;
-  }
-
   .content-header:after {
     width: 25%;
   }
 
   .features {
     width: 70%;
-  }
-
-  .reviews {
-    width: 35%;
   }
 
   .foot-landing {
@@ -102,14 +92,7 @@
   .foot-landing2 {
     flex-direction: column;
   }
-
-  .foot-right {
-    text-align: left !important;
-  }
-
-  .foot-right a {
-    color: white;
-  }
+}
 
 @media all and (max-width: 550px) 
 {
@@ -119,11 +102,7 @@
 
   .features {
     width: 80%;
-  }
-
-  .reviews {
-    width: 45%;
-  }
+  }  
 
   .button-5
   {

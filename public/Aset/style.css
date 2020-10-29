@@ -1,25 +1,47 @@
+       @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
-/*        @media only screen and (min-width: 680px){
-            body{
-                width: 50%;
-                left: 50%;
-                transform : translateX(-50%);
-                position: absolute;
-            }
-        }*/
+       :root{
+            --trans-cubic: cubic-bezier(0.18, 0.89, 0.32, 1.28) 0.9s; 
+       }
 
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
-
-
-/*        *
+        *
         {
-            border: 1px solid red;
-        }*/
+            /*border: 1px solid red;*/
+            scroll-behavior: smooth;
+        }
 
         body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
             width: 100%;
+            overflow: auto !important;
+        }
+
+        .login-body {
+            width: 100vw;
+            margin: 3em auto !important;
+        }
+
+        .login-body .align-items-center {
+            background: url("/Aset/bg-login-head.svg") no-repeat center center fixed; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            border-radius: 20px;
+            position: relative;
+            overflow: hidden;
+            background-position-y: .5em;
+            background-position-x: -2.5em;
+            align-items: unset!important;
+        }
+
+        .login-left img {
+            margin-left: 3em;
+            width: 290px;
+            bottom: -10px;
+            position: absolute;
+            display: block;
         }
 
         h1 {
@@ -46,16 +68,8 @@
             text-decoration: none !important;
         }
 
-        .container {
-            max-width: 1170px;
-            width: 100%;
-            padding: 0 15px;
-            margin: 0 auto;
-        }
-
         .main-content {
-            overflow-y: auto;
-            overflow-x: hidden;
+            overflow: auto !important;
             height: 100%;
             position: absolute;
         }
@@ -63,6 +77,26 @@
         .main-content img {
             height: 100%;
             width: 100%;
+        }
+
+        .form-custom::-webkit-scrollbar,
+        .menu_box::-webkit-scrollbar, 
+        body::-webkit-scrollbar {
+            width: 0.5rem;
+        }
+
+        .form-custom::-webkit-scrollbar-track,
+        .menu_box::-webkit-scrollbar-track,
+        body::-webkit-scrollbar-track {
+            background: rgba(65,65,65, .25);
+        }
+
+        .form-custom::-webkit-scrollbar-thumb,
+        .menu_box::-webkit-scrollbar-thumb,
+        body::-webkit-scrollbar-thumb {
+            background: darkgrey;
+            /*border: 1px solid #1e1e24;*/
+            border-radius: 2em;
         }
 
         @keyframes zoominout {
@@ -145,33 +179,36 @@
 
         #menu_toggle:checked ~ .menu_btn {
             margin-left: 100px; 
-            transition: cubic-bezier(0.18, 0.89, 0.32, 1.28) 0.9s;
+            transition: var(--trans-cubic);
             position: fixed;
             left: 105px;
         }
 
         #menu_toggle:checked ~ .logo-head {
             position: fixed;
-            transition: cubic-bezier(0.18, 0.89, 0.32, 1.28) 0.9s;
+            transition: var(--trans-cubic);
             left: 0;
             margin-left: 1.5em;
         }
 
         #menu_toggle:checked ~ .logo-head a {
-            color: darkgrey;
+            /*color: darkgrey;*/
+            transition: 0.9s;
         }
 
         #menu_toggle:checked ~ .menu_btn > span {
             transform: rotate(135deg);
+            transition: 0.9s;
 /*            background-color: #666;*/
-            background-color: darkgrey;
+            /*background-color: darkgrey;*/
             width: 100%;
         }
 
         #menu_toggle:checked ~ .menu_btn > span::before {
             top: 0;
-            transform: rotate(0);
-            background-color: darkgrey;
+            transform: rotate(0deg);
+            transition: 0.9s;
+            /*background-color: darkgrey;*/
             width: 100%;
             display: none;
         }
@@ -179,18 +216,24 @@
         #menu_toggle:checked ~ .menu_btn > span::after {
             top: 0;
             transform: rotate(270deg);
-            background-color: darkgrey;
+            transition: 0.9s;
+            /*background-color: darkgrey;*/
             width: 100%;
         }
 
         #menu_toggle:checked ~ .menu_box {
             visibility: visible;
-            transition: cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.9s;
+            transition: 0.9s;
+            left: 0;
+        }
+
+        #menu_toggle:checked ~ .logo-bg {
             left: 0;
         }
 
         #menu_toggle:checked ~ .bodyblack {
             display: block;
+            z-index: 2;
         }
 
         .menu_btn {
@@ -203,7 +246,8 @@
             margin-top: -1.5em;
             padding-top: 0.8em;
             margin-bottom: 0;
-            transition: cubic-bezier(0.18, 0.89, 0.32, 1.28) 0.9s;
+            transition: var(--trans-cubic);
+            left: 7vw;
         }
 
         .menu_btn > span {
@@ -254,17 +298,27 @@
             z-index: 4;
         }
 
+        .logo-bg {
+            height: 75px;
+            position: fixed;
+            top: 0;
+            width: 250px;
+            box-shadow: 2px 5px 10px rgba(10,10,10,.2);
+            background-color: #29AAFE;
+            transition: var(--trans-cubic); 
+        }
+
         .bodyblack {
             top: 0;
             display: none;
             left: 0;
-            height: 100%;
-            width: 100%;
+            height: 100vh;
+            width: 100vw;
             position: fixed;
-            z-index: 2;
-            background-color: black;
-            opacity: .7;
-            transition-duration: 0.9s;
+            background: rgba(0,0,0,.7);
+            -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+            transition: var(--trans-cubic);
         }
 
         .menu_item {
@@ -287,6 +341,7 @@
 
         .menu_box {
             background-color: white;
+            overflow-y: auto;
         }
 
         .menu_box a {
@@ -326,28 +381,20 @@
             z-index: 6;
             margin-left: 3.5em;
             margin-top: -2.1em;
-            transition: cubic-bezier(0.18, 0.89, 0.32, 1.28) 0.9s;
+            transition: var(--trans-cubic);
             position: absolute;
+            left: 7vw;
+        }
+
+        .logo-head a {
+            color: white;
+            transition: 0.9s;
         }
 
         .logo:hover {
             text-decoration: none;
             color: white;
         }
-
-/*      .btn-pekerjaan {
-            color: white;
-            background-color: transparent;
-            border: 3px solid white;
-            transition: .3s;
-            border-radius: 5px;
-        }
-
-        .btn-pekerjaan:hover {
-            background-color:white;
-            color: black;
-            transition: .3s;
-        }*/
 
 /* General button style (reset) */
     .button {
@@ -364,7 +411,7 @@
         -moz-transition: all 0.3s;
         transition: all 0.3s;
         border: 3px solid white;
-        box-shadow: 3px 4px grey;
+        background-color: dodgerblue;
     }
 
     .button:after {
@@ -443,26 +490,22 @@
         left: 0;
     }
 
-/*        .carousel-caption {
-            position: absolute;
-            letter-spacing: 2px;
-            transform: translate(-50%, -50%);
-            color: #1A1A1A;
-            padding: 0 15px;
-            margin: 0 auto;
-            top: 50%;
-            left: 50%;
-            text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
-        }*/
+        .carousel-caption {
+            top: 0 !important;
+            bottom: 0 !important;
+            vertical-align: middle;
+            padding: 66.5px 0;
+            left: 10%;
+            right: 10%;
+            z-index: 0;
+        }
 
         .carousel-prop-left h1 {
-            width: 75%;
             color: #212529;
         }
 
         .carousel-prop-right img {
-            width: 95%;
-            height: 85%;
+            width: 100%;
         }
 
         .carousel , .carousel-inner , .carousel-item {
@@ -500,6 +543,8 @@
             -moz-background-position: center;
             -o-background-position: center;
             background-position: center;
+
+            background-repeat: no-repeat;
         }
         /*
 
@@ -608,7 +653,6 @@
         }
 
         .reviews {
-            width: 17%;
             box-shadow: 2px 5px 10px rgba(10,10,10,.2);
             background-color: white;
             border-radius: 7px;
@@ -617,6 +661,7 @@
             transition: .3s;
             box-sizing: border-box;
             position: relative;
+            padding: 0 !important;
         }
 
         .reviews:hover {
@@ -662,10 +707,10 @@
         }
 
         .support {
-            width: 30%;
             text-decoration: none;
             transition: .3s;
             box-sizing: border-box;
+            padding: 0 !important;
         }
 
         .support:hover {
@@ -695,17 +740,20 @@
             color: white;
             font-size: 1.3em;
             min-height: 500px;
-            background-image: url("/Aset/bg-landing-foot.jpg");
+            background-image: url("/Aset/Scroll Group 2.svg");
             
             -webkit-background-size: cover;
             -moz-background-size: cover;
             -o-background-size: cover;
             background-size: cover;
 
-            -webkit-background-position: center;
-            -moz-background-position: center;
-            -o-background-position: center;
-            background-position: center;
+            -webkit-background-position: left top;
+            -moz-background-position: left top;
+            -o-background-position: left top;
+            background-position: left top;
+            background-repeat: no-repeat;
+
+            background-position-x: -2em;
         }
 
         .foot-left, .foot-right {
@@ -718,7 +766,6 @@
 
         .foot-left a, .foot-right a {
             margin-bottom: 1.5em;
-            width: 100%;
         }
 
         .copyright {
@@ -730,16 +777,15 @@
         .btn-custom {
             background-color: dodgerblue;
             color: white;
-            width: 100%;
-            border-bottom-left-radius: 50px;
-            border-bottom-right-radius: 50px;
-            transition: .3s;
+            width: 25%;
             font-weight: bold;
+            border-radius: 5px;
+            transition: ease-in .3s;
         }
 
         .btn-custom:hover {
-            background-color: navy;
-            transition: .3s;
+            background-color: #29AAFE;
+            transition: ease-in .3s;
         }
 
         .form-custom , ::placeholder{
@@ -747,7 +793,11 @@
             color: #333;
         }
 
-        .password-hidden{
+        .form-custom {
+            margin: 1.5em 4em;
+        }
+
+        .password-hidden {
             width: 40px;
             height: 40px;
             background-color: #f4f4f4;
@@ -755,38 +805,47 @@
             border-bottom-right-radius: 50px;
         }
 
-        .password-hidden i{
+        .password-hidden i {
             color: #333;
             margin-left: 6px;
             margin-top: 11px;
             position: absolute;
         }
 
-        .api{
-            width: 70px;
-            font-size: 50px;
-            color: #333;
-            text-align: center;
+        .api {
+            width: 100%;
+            padding: .5em;
+            font-size: 1em;
+            background-color: #fff;
+            border: 1px solid #ced4da;
+            border-radius: .25rem;
+            transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+            margin-bottom: .5em;
+            font-weight: bold;
+            transition: ease-in .3s;
+            position: relative;
+            color: #495057;
         }
 
-        .api p{
-            font-size: 15px;
+        .api i {
+            left: .5em;
+            position: absolute;
+            font-size: 1.5em; 
         }
 
-        .api.google:hover{
-            color: firebrick;
+        .google:hover, .facebook:hover {
+            color: white;
+            transition: ease-in .3s;
         }
 
-        .api.facebook:hover{
-            color: navy;
+        .google:hover {
+            background-color: #D44638;
+            transition: ease-in .3s;
         }
 
-        .api.line:hover{
-            color: #00B900;
-        }
-
-        .align-center {
-            text-align: center;
+        .facebook:hover {
+            background-color: #4267B2;
+            transition: ease-in .3s;
         }
 
         .belum-punya-akun{

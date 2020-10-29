@@ -12,15 +12,25 @@
 */
 
 Route::get('/', function () {
-    return view('esemka');
+    return view('landing');
 });
 
-Auth::routes();
-Auth::routes(['verify' => true]);
+Route::post('/subscribe','SubscribeController@subscribe');
 
-//Mlebu Web e (wes login)
-Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/akun', 'AkunController@index');
+// For Offline Page PWA
+Route::get('/offline', function() {
+    return view('offline');
+});
 
-Route::get('auth/{provider}', 'Auth\SocialiteController@redirectToProvider');
-Route::get('auth/{provider}/callback', 'Auth\SocialiteController@handleProviderCallback');
+// Auth::routes();
+// Auth::routes(['verify' => true]);
+
+// //Mlebu Web e (wes login)
+// Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/jobs', function() {
+//     return view('jobs');
+// });
+// Route::get('/akun', 'AkunController@index');
+
+// Route::get('auth/{provider}', 'Auth\SocialiteController@redirectToProvider');
+// Route::get('auth/{provider}/callback', 'Auth\SocialiteController@handleProviderCallback');

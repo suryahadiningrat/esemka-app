@@ -14,9 +14,9 @@
     <script src="/Aset/script.js"></script>
     
     <title>Esemka</title>
+
+    <?php echo view('head_tags.pwa_head'); ?>
     
-    <style>
-    </style>
   </head>
   <body id="body">    
     <div class="preloader">
@@ -38,10 +38,11 @@
                     </label>
                     <div class="logo-head"> <a class="logo bold" href="#">esemka</a> </div>
                     <ul class="menu_box bold">
+                        <li class="logo-bg"></li>
                         <li><a href="#" class="menu_item"><i class="fas fa-home">&nbsp;</i> Home</a></li>
                         <li><a href="{{ route('login')}}" class="menu_item"><i class="fas fa-user-lock">&nbsp;</i> Login</a></li>
                         <li><a href="{{ route('register')}}" class="menu_item"><i class="fas fa-clipboard-list">&nbsp;</i> Daftar</a></li>
-                        <li><a href="#" class="menu_item"><i class="fas fa-toolbox">&nbsp;</i> Fitur</a></li>
+                        <li><a href="#features" class="menu_item"><i class="fas fa-toolbox">&nbsp;</i> Fitur</a></li>
                         <li><a href="#" class="menu_item"><i class="fas fa-question">&nbsp;</i> Tentang Kami</a></li>
                     </ul>
                     <div class="bodyblack" id="bodyblack">
@@ -52,7 +53,10 @@
             </div>
             <div class="text-right">
                 <a href="#">
-                    <span class="btn button button-5 button-5b icon-search"><i class="fa fa-search"></i><span>Cari Lowongan</span></span>
+                    <span class="btn button button-5 button-5b icon-search button-blue">
+                        <i class="fa fa-search"></i>
+                        <span>Cari Lowongan</span>
+                    </span>
                 </a>
             </div>
         </div>
@@ -60,12 +64,13 @@
     
     <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel" data-interval="5000">
         <div class="carousel-inner">
-            <div class="carousel-item w-100 carousel-img1 d-flex active">
-                <div class="container float-left w-100 carousel-prop-left">
-                    <h1 class="m-auto text-center bold"> Jutaan Perusahaan Sedang Mencari Karyawannya Disini </h1>
+            <div class="carousel-item carousel-img1 active"></div>
+            <div class="carousel-caption row align-items-center">
+                <div class="col-12 col-sm-6 carousel-prop-left">
+                    <h1 class="text-center bold"> Jutaan Perusahaan Sedang Mencari Karyawannya Disini </h1>
                 </div>
-                <div class="container float-right w-100 carousel-prop-right">
-                    <img src="/Aset/head-1.jpg" alt="Cari Pekerjaanmu Sekarang" width="450" height="300">
+                <div class="col-12 col-sm-6 carousel-prop-right">
+                    <img id="ilustrasi" src="/Aset/online-cv.svg" alt="Cari Pekerjaanmu Sekarang">
                 </div>
             </div>
         </div>
@@ -73,7 +78,7 @@
     
     <div class="container mt-2 mb-5">
         
-        <h2 class="content-header text-center bold mt-5 pt-3 mb-4">Fitur - Fitur Esemka </h2>
+        <h2 class="content-header text-center bold mt-5 pt-3 mb-4" id="features">Fitur - Fitur Esemka </h2>
 
         <div class="content-item">
             <div class="row justify-content-around mt-4">
@@ -95,7 +100,7 @@
                             <i alt="icon" class="fas fa-clipboard-list"></i>
                         </div>
                         <div class="text-left features-text">
-                            <h4 class="bold">Curriculum Vitae</h4>
+                            <h4 class="bold">CV</h4>
                             <p>Buat CV dengan Tampilan Menarik</p>
                         </div>
                     </div>
@@ -145,13 +150,13 @@
         <div class="content-item">
             
             <div class="row justify-content-around mt-4 parent-reviews">
-                <a class="reviews my-3 mx-1" href="portofolio">
-                    <div class="reviews-content w-100 mt-2 mb-2">
+                <a class="col-6 col-sm-2 reviews my-3 mx-1" href="portofolio">
+                    <div class="reviews-content w-100 my-2">
                         <div class="reviews-icon">
                             <i alt="icon" class="fas fa-user"></i>
                         </div>
                         <div class="reviews-text text-left pb-4">
-                            <h4 class="bold">Dimas Cahyo</h4>
+                            <h4 class="bold">Rifqi Surya</h4>
                             <p>Mencari tempat Magang tanpa harus berkeliling</p>
                         </div>
                     </div>
@@ -159,8 +164,8 @@
                     <p class="reviews-status">Siswa</p>
                 </a>
 
-                <a class="reviews my-3 mx-1" href="portofolio">
-                    <div class="reviews-content w-100 mt-2 mb-2">
+                <a class="col-6 col-sm-2 reviews my-3 mx-1" href="portofolio">
+                    <div class="reviews-content w-100 my-2">
                         <div class="reviews-icon">
                             <i alt="icon" class="fas fa-user"></i>
                         </div>
@@ -173,8 +178,8 @@
                     <p class="reviews-status">Siswa</p>
                 </a>
 
-                <a class="reviews my-3 mx-1" href="portofolio">
-                    <div class="reviews-content w-100 mt-2 mb-2">
+                <a class="col-6 col-sm-2 reviews my-3 mx-1" href="portofolio">
+                    <div class="reviews-content w-100 my-2">
                         <div class="reviews-icon">
                             <i alt="icon" class="fas fa-user"></i>
                         </div>
@@ -187,8 +192,8 @@
                     <p class="reviews-status">Siswa</p>
                 </a>
 
-                <a class="reviews my-3 mx-1" href="portofolio">
-                    <div class="reviews-content w-100 mt-2 mb-2">
+                <a class="col-6 col-sm-2 reviews my-3 mx-1" href="portofolio">
+                    <div class="reviews-content w-100 my-2">
                         <div class="reviews-icon">
                             <i alt="icon" class="fas fa-building"></i>
                         </div>
@@ -201,8 +206,8 @@
                     </div>
                 </a>
 
-                <a class="reviews my-3 mx-1" href="portofolio">
-                    <div class="reviews-content w-100 mt-2 mb-2">
+                <a class="col-6 col-sm-2 reviews my-3 mx-1" href="portofolio">
+                    <div class="reviews-content w-100 my-2">
                         <div class="reviews-icon">
                             <i alt="icon" class="fas fa-building"></i>
                         </div>
@@ -222,7 +227,7 @@
         <h2 class="content-header text-center bold mt-5 pt-3 mb-4">Didukung Oleh</h2>
           <div class="content-item">
             <div class="row justify-content-around mt-4">
-                <a class="support m-3" href="https://www.kemdikbud.go.id/" target="_blank">
+                <a class="col-6 col-sm-4 support" href="https://www.kemdikbud.go.id/" target="_blank">
                     <div class="support-content w-100 mt-2 mb-2">
                         <div class="support-image text-center">
                             <img src="/Aset/kemendikbud-logo.png">
@@ -233,7 +238,7 @@
                     </div>
                 </a>
 
-                 <a class="support m-3" href="https://www.smkn2solo.sch.id/" target="_blank">
+                 <a class="col-6 col-sm-4 support" href="https://www.smkn2solo.sch.id/" target="_blank">
                     <div class="support-content w-100 mt-2 mb-2">
                         <div class="support-image text-center">
                             <img src="/Aset/smkn2-logo.png">
@@ -244,7 +249,7 @@
                     </div>
                 </a>
 
-                 <a class="support m-3" href="https://www.kemnaker.go.id/" target="_blank">
+                 <a class="col-6 col-sm-4 support" href="https://www.kemnaker.go.id/" target="_blank">
                     <div class="support-content w-100 mt-2 mb-2">
                         <div class="support-image text-center">
                             <img src="/Aset/kemenaker-logo.png">
@@ -260,20 +265,23 @@
     </div>
     
     <footer class="pt-5 foot-landing">
-        <div class="container pb-5 pt-5 w-100 d-block"> <a class="logo bold" href="#">esemka</a> </div>
-        <div class="container d-flex w-100 pb-5 foot-landing2">
-            <div class="float-left w-100 d-flex foot-left">
-                <a href="tentang-kami">Tentang Kami</a>
-                <a href="hubungi-kami">Kontak Kami</a>
-                <a href="fitur">Layanan</a>
-            </div>
-            <div class="float-right w-100 d-flex text-right foot-right">
-                <a href="syarat-ketentuan">Support</a>
-                <a href="pusat bantuan">Terms & Condition</a>
-                <a href="kebijakan privasi">Kebijakan Privasi</a>
+        <div class="container pb-5 pt-4 w-100 d-block"> 
+            <a class="logo bold" href="#">esemka</a>
+            {{-- <div class="container d-flex w-100 pb-5 foot-landing2">  --}}
+            <div class="row justify-content-around py-4">
+                <div class="row col-12 col-md-6 foot-left">
+                    <a href="tentang-kami">Tentang Kami</a>
+                    <a href="hubungi-kami">Kontak Kami</a>
+                    <a href="fitur">Layanan</a>
+                </div>
+                <div class="row col-12 col-md-6 foot-right text-right">
+                    <a href="syarat-ketentuan">Support</a>
+                    <a href="pusat bantuan">Terms & Condition</a>
+                    <a href="kebijakan privasi">Kebijakan Privasi</a>
+                </div>
             </div>
         </div>
-        <p class="copyright pt-2 pb-5 bold text-center">&copy; 2020 Crewsakan Tech All Rights Reserved</p>
+        <p class="copyright pt-1 pb-5 bold text-center">&copy; 2020 Crewsakan Tech All Rights Reserved</p>
     </footer>
 
     <!-- Optional JavaScript -->

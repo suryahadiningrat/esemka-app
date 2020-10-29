@@ -1,0 +1,764 @@
+.alert{
+    font-family: 'Poppins', sans-serif;    
+}
+
+body {
+    background-color: #f7f7f7;
+    text-align: none;
+}
+
+.navbar {
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 1.25em;
+    align-items: center;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.logo-container {
+    width: max-content;
+}
+
+.logo-container .app-logo {
+    width: 2.8em;
+    height: 2.8em;
+}
+
+.app-logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.logo-container .app-name {
+    margin-left: 0.5em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.tab-navigation-navbar {
+    display: flex;
+}
+
+.tab-navigation-navbar .tab-navbar {
+    margin-right: 0.6em;
+    margin-left: 0.6em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.tab-navigation-navbar .tab-navbar.active:after {
+    display: block;
+    content: '';
+    width: 100%;
+    height: 0.25em;
+    background-color: #00a8ff;
+    margin-top: 0.25em;
+}
+
+.btn-subscribe {
+    background-color: #00a8ff;
+    text-decoration: none;
+    color: white;
+    padding: 0.5em;
+    padding-right: 1.25em;
+    padding-left: 1.25em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#font-subscribe{
+    font-size: 20px;
+}
+
+.btn-subscribe:hover {
+    background-color:#0488fb;
+    color: white;
+}
+
+.content-right-background {
+    display: flex;
+    background-image: url('/assets/images/landing/Group_18.png');
+    height: 28em;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    padding: 4em;
+    align-items: center;
+    margin-bottom: 10em;
+}
+
+.content-right-background .content {
+    width: 45%;
+}
+
+.content-right-background .content p {
+    font-family: 'Poppins', sans-serif;
+}
+
+.content-right-background .content .hashtag {
+    font-size: 35px;
+}
+
+.content-right-background .content .hashtag i {
+    color: #00b3ff;
+}
+
+.content-right-background .content .with-text {
+    font-size: 35px;
+}
+.content-right-background .content .desc {
+    font-size: 20px
+}
+.content-right-background .content .btn-subscribe {
+    box-shadow: 5px 6px 10px rgba(0, 0, 0, 0.25);
+}
+
+.feature-content {
+    width: 100%;
+    height: max-content;
+    padding-left: 2em;
+    padding-right: 2em;
+    background-image: url('/assets/images/landing/Group_19.png');
+    background-size: cover;
+    margin-bottom: 5em;
+}
+
+.feature-content .short-desc .hashtag {
+    display: inline-block;
+    font-size: 35px;
+    margin-bottom: 0.2em;
+}
+
+.feature-content #desc{
+    font-size: 20px;
+}
+
+.feature-card-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature-card-list .feature-card {
+    text-decoration: none;
+    background-color: white;
+    margin: 0.8em;
+    width: calc(33% - 1.6em);
+    padding: 1em;
+    overflow: hidden;
+    box-shadow: none;
+    cursor: pointer;
+    color: black;
+    transition: 0.5s;
+}
+
+.feature-card-list .feature-card:hover {
+    transition: 0.5s;
+    transform: scale(1.05);
+}
+
+.feature-card .card-img {
+    width: 100%;
+    height: 15em;
+}
+
+.feature-card .card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+    object-position: center;
+}
+
+.feature-card .card-title {
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+.feature-card .card-title::after {
+    display: block;
+    background-color: #00a8ff;
+    content: '';
+    width: 30%;
+    height: 0.15em;
+    margin-top: 0.25em;
+    margin-bottom: 0.75em;
+}
+
+.feature-card .card-content {
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    padding: 0;
+    margin: 0;
+}
+
+.feature-wireframe {
+    display: flex;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    height: 30em;
+}
+
+.feature-wireframe .video {
+    display: block;
+    border: none;
+    width: 52.5%;
+    height: 100%;
+    background-color: white;
+    margin-right: 2.5%;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.feature-wireframe .option-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.feature-wireframe .option-list .option {
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4em;
+    font-weight: bold;
+    padding-top: 6.5%;
+    padding-bottom: 6.5%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    cursor: pointer;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.feature-wireframe .option-list .option.active::after {
+    display: block;
+    content: '';
+    width: 45%;
+    height: 0.2em;
+    background-color: #00a8ff;
+}
+
+.feature-wireframe .option-list .option .link {
+    display: none;
+}
+
+.content-right-background.history {
+    background-image: url('/assets/images/landing/Group_20.png');
+    background-size: contain;
+    background-position: right;
+}
+
+.content-right-background.history .content .hashtag i {
+    color:#ff0078;
+}
+
+.content-right-background.history .content .btn-subscribe {
+    box-shadow: 5px 6px 10px rgba(0, 0, 0, 0.25);
+    background-color:#ff0078;
+}
+
+.content-right-background.history .content .btn-subscribe:hover {
+    background-color: #cc0060;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-image: url('/assets/images/landing/Path_52.png');
+    background-size: cover;
+    width: 100%;
+    padding-top: 7.5em;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer .row {
+    margin-bottom: auto;
+    width: 100%;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 5em;
+}
+
+.footer .subscribe-info .partner {
+    width: 10em;
+    margin-bottom: 1.2em;
+}
+
+.footer .subscribe-info .partner img {
+    /*width: 100%;*/
+}
+
+.footer .subscribe-info .now-subs {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+.footer .subscribe-info .email-subs {
+    width: max-content;    
+    padding: 0.8em;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #a2a2a2;
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+    border-radius: 0.25em;
+    box-shadow: 5px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.footer .subscribe-info .btn-subscribe-footer {
+    border-radius: 0.25em;
+    padding: 0.6em;
+    padding-left: 1.2em;
+    padding-right: 1.2em;
+    background-color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #6c6c6c;
+    cursor: pointer;
+}
+
+.footer .subscribe-info .btn-subscribe-footer:hover {
+    color: black;
+}
+
+.footer .social-media-info {
+    text-align: center;
+    height: 100%;
+}
+
+.footer .social-media-info .title {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 1.6em;
+}
+
+.footer .social-media-list {
+    display: inline-flex;
+    margin-top: 1em;
+}
+
+.footer .social-media-list .social-media {
+    display: flex;
+    align-items: center;
+    margin: 0.8em;
+    cursor: pointer;
+}
+
+.footer .social-media-list .social-media .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+    font-size: 1.5rem;
+    background-color: white;
+    margin-right: 0.25em;
+}
+
+.footer .social-media-list .social-media.twitter .icon {
+    background-color: #01affe;
+    color: white;
+}
+
+.footer .social-media-list .social-media.fb .icon {
+    background-color: #127aed;
+    color: white;
+}
+
+.footer .social-media-list .social-media.youtube .icon {
+    background-color: crimson;
+    color: white;
+}
+
+#socmed-link:hover .icon {
+    background-color: #999;
+}
+
+#socmed-link:hover .name {
+    color: #ddd;
+}
+
+.footer .social-media-list .social-media .name {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+.footer .text-author {
+    display: block;
+    width: 100%;
+    border-top: 1px solid white;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    padding: 1em;
+}
+
+.footer .text-author .fa-heart {
+    color: #fe281b;
+}
+
+#subscribe-modal .modal-content {
+    border-radius: 1em;
+    border: none;
+}
+
+#subscribe-modal .modal-header {
+    border: none;
+}
+
+#subscribe-modal .modal-header .close {
+    outline: none;
+}
+
+#subscribe-modal .modal-header .close span {
+    font-size: 1.6em;
+}
+
+#subscribe-modal .modal-body {
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+#subscribe-modal .modal-body .subs-text {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+#subscribe-modal .modal-body .subs-text span {
+    color: #00a8ff;
+}
+
+#subscribe-modal .modal-body input {
+    border: none;
+    border-radius: 0.25em;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #a2a2a2;
+    outline: none;
+    padding: 0.5em;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+    margin-top: 0.25em;
+    margin-bottom: 2em;
+}
+
+#subscribe-modal .modal-body input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #a2a2a2;
+    opacity: 1; /* Firefox */
+}
+  
+#subscribe-modal .modal-body input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #a2a2a2;
+}
+  
+#subscribe-modal .modal-body input::-ms-input-placeholder { /* Microsoft Edge */
+    color: #a2a2a2;
+}  
+
+#subscribe-modal .modal-body .btn-subscribe {
+    border-radius: 0.5em;
+    box-shadow: none;
+}
+
+#login-modal .modal-content {
+    border: none;
+    border-radius: 0.5em;
+}
+
+#login-modal .modal-body {
+    padding: 0;
+}
+
+#login-modal .head-title {
+    width: 100%;
+    height: 5.5em;
+    background-image: url('/assets/images/landing/login-top.png');
+    background-size: 100% 100%;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: white;
+    padding-top: 0.5em;
+}
+
+#login-modal .login-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6em;
+    font-weight: bold;
+    text-align: center;
+}
+
+#login-modal .login-btn-container {
+    margin-top: 1em;
+}
+
+#login-modal .login-btn {
+    display: flex;
+    width: 65%;
+    padding: 0.5em;
+    margin-bottom: 1.5em;
+    justify-content: center;
+    background-color: white;
+    background: #FFFFFF;
+    box-shadow: 10px 12px 30px rgba(0, 0, 0, 0.15);
+    border-radius: 0.5em;
+    cursor: pointer;
+}
+
+#login-modal .login-btn:hover {
+    background-color: #f0f0f0;
+}
+
+#login-modal .login-btn .google-icon {
+    width: 1.5em;
+    height: 1.5em;
+    background-image: url('/assets/images/landing/flat-color-icons_google.png');
+    background-size: cover;
+}
+
+#login-modal .footer-modal {
+    height: 11em;
+}
+
+#login-modal .footer-modal .vector-img {
+    background-image: url('/assets/images/landing/reading-side.png');
+    background-size: 98% 100%;
+    background-position: right;
+}
+
+#login-modal .footer-modal {
+    font-family: 'Poppins', sans-serif;
+    padding: 0.25em;
+}
+
+#login-modal .footer-modal .text-team {       
+    text-align: center;
+    font-size: 0.9em;
+}
+
+#login-modal .footer-modal span {
+    color: #00a8ff;
+}
+
+#login-modal .footer-modal .fa-heart {
+    color: #fe281b;   
+}
+
+@media screen and (max-width: 960px) {
+    .content-right-background {
+        height: 20em;
+        padding: 4em;
+        padding-top: 8em;
+        margin-bottom: 10em;
+    }
+
+    .feature-content {
+        height: max-content;
+    }
+
+    .feature-card-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .feature-card-list .feature-card {
+        text-decoration: none;
+        background-color: white;
+        margin: 0.5em;
+        width: calc(50% - 1em);
+        padding: 1em;
+        overflow: hidden;
+        box-shadow: none;
+        cursor: pointer;
+        color: black;
+    }
+
+    .feature-wireframe {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: max-content;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+    
+    .feature-wireframe .video {
+        width: 100%;
+        height: 25em; 
+        margin-right: 0;
+    }
+    
+    .feature-wireframe .option-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 1em;
+    }
+    
+    .feature-wireframe .option-list .option {
+        background-color: white;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.6em;
+        font-weight: bold;
+        padding-top: 2.5%;
+        padding-bottom: 2.5%;
+        padding-left: 2.5%;
+        padding-right: 2.5%;        
+        margin-bottom: 1.5%;
+    }
+
+    /*rifky*/
+    .content-right-background .content .hashtag {
+        font-size: 30px;
+    }
+
+    .content-right-background .content .with-text {
+        font-size: 30px;
+    }
+    .content-right-background .content .desc {
+        font-size: 15px;
+    }
+
+    .feature-content .short-desc .hashtag {
+        display: inline-block;
+        font-size: 30px;
+        margin-bottom: 0.2em;
+    }
+
+    .feature-content #desc{
+        font-size: 15px;
+    }
+
+    .content-right-background.history {
+        background-position: top right;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .tab-navigation-navbar {
+        display: none;
+    }
+
+    .content-right-background {
+        background-image: url('/assets/images/landing/Scroll_Group_1.png');
+        padding: 1.5em;
+        padding-top: 8em;
+    }
+
+    .content-right-background .content {
+        width: 100%;
+    }
+
+    .content-right-background.history {
+        background-image: url('/assets/images/landing/bg.png');
+    }
+
+    .feature-content {
+        padding-left: 1.2em;
+        padding-right: 1.2em;
+        margin-bottom: 5em;
+    }
+
+    .feature-wireframe .video {
+        width: 100%;
+        height: 20em; 
+    }
+
+    .feature-wireframe .option-list .option {
+        font-size: 1.4em;
+    }
+
+    .footer .row {
+        margin-bottom: auto;
+        width: 100%;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    
+    .footer .subscribe-info .email-subs {
+        /*width: 60% !important;*/
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .feature-card-list .feature-card {
+        margin: 0.5em;
+        width: calc(100% - 1em);
+        padding: 1em;
+    }
+
+    .navbar {
+        display: flex;
+        position: sticky;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: white;
+        padding: 1.25em;
+        align-items: center;
+        padding-left: 0.8em;
+        padding-right: 0.8em;
+    }
+
+    .logo-container .app-logo {
+        width: 2.2em;
+        height: 2.2em;
+    }
+
+    .feature-wireframe .video {
+        width: 100%;
+        height: 15em; 
+    }
+
+    .feature-wireframe .video {
+        width: 100%;
+        height: 20em; 
+    }
+
+    .feature-wireframe .option-list .option {
+        font-size: 1.2em;
+    }
+
+    .footer .social-media-list .social-media {
+        flex-direction: column;
+    }
+
+    .footer .text-author {
+        font-size: 0.9em;
+        padding: 1em;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .footer .social-media-info .title {
+        font-size: 1.3em;
+    }
+}

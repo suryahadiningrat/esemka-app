@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1674.642" height="774.666" viewBox="0 0 1674.642 774.666">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2, .cls-3 {
+        isolation: isolate;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        clip-path: url(#clip-path-2);
+      }
+
+      .cls-4 {
+        fill: #29aafe;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect class="cls-1" x="179" width="1674.642" height="774.666"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect class="cls-1" width="1853.642" height="774.666"/>
+    </clipPath>
+  </defs>
+  <g id="Scroll_Group_2" data-name="Scroll Group 2" class="cls-2" transform="translate(-179)">
+    <g id="Component_1_1" data-name="Component 1 – 1">
+      <g id="Scroll_Group_1" data-name="Scroll Group 1" class="cls-3">
+        <path id="Path_4" data-name="Path 4" class="cls-4" d="M2855.237,10.944c284.024,0,766.792,160.476,750.406,444.656-6.128,106.283,228.551,220.537,323.145,327.279C4087.175,961.6,4143.243,1111.6,4143.243,1111.6L2453.78,1098S2082.562,22.475,2456.511,13.7,2571.213,10.944,2855.237,10.944Z" transform="translate(-2289.6 -8.934)"/>
+      </g>
+    </g>
+  </g>
+</svg>

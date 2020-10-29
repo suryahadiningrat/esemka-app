@@ -1,0 +1,45 @@
+/*body:before, body:after {
+    content: "";
+    position: fixed;
+    background: white;
+    left: 0;
+    right: 0;
+    height: .5em;
+}
+
+body:before {
+    top: 0;
+}
+
+body:after {
+    bottom: 0;
+}
+
+body {
+    border-left: 5em solid white;
+    border-right: 5em solid white;
+    overflow: hidden !important;  
+}*/
+
+body {
+    overflow: hidden !important;
+}
+
+.login-body .align-items-center {
+    height: 550px;
+}
+
+.form-custom {
+    overflow: auto;
+    height: 90%;
+    position: absolute;
+    padding: 1em;
+}
+
+@media all and (max-width: 990px) 
+{
+    .form-custom {
+        height: 70vh;
+        position: relative;
+    }
+}
